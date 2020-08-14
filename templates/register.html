@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+ <head>
+	 <title>Say hello</title>
+	 <link rel="stylesheet" href="{% static 'register.css' %}"/>
+ </head>
+ <body>
+ 	  <div class="container">
+
+ 	  	<div class="card">
+ 	  	   <h3 style="margin:10px;">EZ TRAINING<h3/>
+ 	  	  <form method="post" action="send_details/">
+			  {% csrf_token %}
+ 	  	  	<div>
+ 	  	      <input class="form-inputs" name="name" type="text" placeholder="Name"/>
+ 	  	    </div>	
+ 	  	    <div>
+ 	  	      <input class="form-inputs" name="email" type="email" placeholder="Enter Email"/>
+ 	  	    </div>
+			     <div>
+ 	  	      <input class="form-inputs" name="address" type="text" placeholder="Address"/>
+ 	  	    </div>
+ 	  	     <div>
+ 	  	      <input class="form-inputs" name="carmodel" type="text" placeholder="Car Model"/>
+ 	  	    </div>
+ 	  	  	<div>
+ 	  	      <input class="form-inputs" name="phoneno" type="text" placeholder="Phone Number"/>
+ 	  	    </div>
+
+
+ 	  	    <div>
+ 	  	    	<button class="login-btn" type="submit">Register</button>
+ 	  	    </div>
+ 	  	  </form>
+ 	  	  <a href="./login.html">Already a member?Login here</a>
+      </div> 
+ </body>
+</html>
+

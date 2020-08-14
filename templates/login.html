@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	 <title>Login kar bahi</title>
+	 <link rel="stylesheet" href="./login.css">
+ </head>
+ <body>
+ 	  <div class="container">
+
+ 	  	<div class="card">
+ 	  	   <h3 style="margin:10px;">Login form</h3>
+ 	  	  <form action="account.html">
+ 	  	  
+ 	  	  	<div>
+ 	  	      <input class="form-inputs" type="email" placeholder="ENTER email" required />
+ 	  	    </div>
+ 	  	    <div>
+ 	  	    <input 
+ 	  	      class="form-inputs" 
+ 	  	      type="password" 
+ 	  	      value=""
+ 	  	      id="myInput"
+ 	          placeholder="Password" required="" />  	      
+ 	  	     <button onclick="myFunction()">Copy</button>
+             
+ 	  	    <script>
+            function myFunction() {
+               var copyText = document.getElementById("myInput");
+               copyText.select();
+               copyText.setSelectionRange(0, 99999)
+               document.execCommand("copy");
+               alert("Copied the text: " + copyText.value);
+            }
+            </script>
+
+
+
+ 	  	      
+ 	  	    </div>
+ 	  	    <div>
+ 	  	    	<button class="login-btn" type="submit">Login!<i class="fas fa-eye"></i</button>
+ 	  	    </div>
+ 	  	     
+ 	  	  </form>
+ 	  	  <a href="./signup.html">Create An Account</a>
+ 	  	  <form action="@{.html">
+ 	  	   <div>
+ 	  	    	<button class="login-btn" type="submit">Forgot password.Cick here<i class="fas fa-eye"></i</button>
+ 	  	    </div>
+ 	  	  </form>
+      </div> 
+
+    <script type="a.js"></script> 
+</body>
+</html>
+
